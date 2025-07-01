@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HA Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      
+      
+    }
+    
+    .navbar {
+      display: flex;
+      background-color: #ffffff;
+      padding: 20px 40px;
+      box-shadow: 0 4px 7px rgba(0, 0, 0, 0.192);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      justify-content: space-between;
+      
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: rgb(88, 88, 88);
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      text-decoration: underline;
+      text-underline-offset: 5px;
+      color: #ff6b6b;
+    }
+
+    #title{
+      font-size: 1.2rem;
+      color: #ff6b6b;
+      
+    }
+
+    .white-space{
+      white-space: pre-wrap;
+      text-align: center;
+      width: 50%;
+      margin: 0 auto;
+      font-size: 2rem;
+    }
+
+    .about-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px;
+    }
+
+    .text-section{
+      max-width: 50%;
+      padding-left: 3%;
+      padding-top: 3%;
+    }
+
+    .text-section h1{
+      margin: 0;
+      font-size: 5rem;
+
+    }
+    
+    .text-section h2{
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: 20px 0;
+      
+
+    }
+
+    .text-section p {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      
+    }
+
+    .orange-line{
+      height: 3px;
+      width: 50px;
+      background-color: #ff6b6b;
+      margin: 20px 0;
+    }
+
+    .image-section{
+      display: flex;
+      justify-content: flex-end;
+      flex: 1;
+      
+    }
+    
+    .image-section img{
+      
+      width: 80%;
+      height: auto;
+      padding-right: 100px;
+    }
+
+    .container{
+      display: flex;
+      justify-content: space-between;
+      
+      padding: 60px;
+    }
+   
+    /* för skärmen med pixel bredd 500 eller mindre */
+    @media (max-width: 500px) {
+      .about-container {
+        flex-direction: column;
+        text-align: center;
+      }
+      .text-section, .image-section {
+        width: 100%;
+      }
+      .image-section {
+        justify-content: center;
+        margin-top: 30px;
+      }
+      .image-section img {
+        width: 80%;
+      }
+    }
+
+  </style>
+
+</head>
+<body>
+  
+  
+  
+  <div class="navbar">
+    <p id="title">HA Portfolio</p>
+    <div class="nav-links">
+      <a href="index.html">Hem</a>
+      <a href="#Om" class="active">Om</a>
+      <a href="Cv.html">CV</a>
+      <a href="Portfolio.html">Portfolio</a>
+      <a href="Kontakt2.html">Kontakt</a>
+    </div>
+  </div>
+
+  <div class="container">  
+    <div class="text-section">
+      <div class="orange-line"></div>
+      <h1>Header.</h1>
+      <h2>Header2</h2>
+      <p>
+      I really enjoy working on cutting-edge projects and developing enabling new technologies in
+      the hope that these will one day translate back to the real world and have a direct impact on our lives.
+      </p>
+      <p>
+      I also enjoy being surrounded by brilliant people that share the vision of "technology for good"
+      and I’m truly humbled by their support. Meanwhile, I’m excited by the ever-growing challenges
+      I’m faced with as my career unfolds and keen to take them on.
+      </p>
+    </div>
+
+    <div class="image-section">
+      <img src="Depositphotos_484354208_S.png" alt="Profile" loading="lazy" />
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HA Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      background-color: #ffffff;
+      padding: 20px 40px;
+      box-shadow: 0 4px 7px rgba(0, 0, 0, 0.192);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      justify-content: space-between;
+      
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: rgb(88, 88, 88);
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      text-decoration: underline;
+      text-underline-offset: 5px;
+      color: #ff6b6b;
+    }
+
+    #title{
+      font-size: 1.2rem;
+      color: #ff6b6b;
+      
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      text-align: center;
+      justify-content: center;
+      min-height: calc(100vh - 80px);
+    }
+
+    .profile img {
+      border: 2px solid #ff6b6b;
+      width: 500px;
+      max-width: 80%;
+      border-radius: 50%;
+      
+    }
+
+    .info-box {
+      margin-top: 100px;
+      max-width: 20%;
+      font-size: 1.2rem;
+    }
+
+    /* anpassar sidan för skärmar med bredd 500px eller högre */
+    @media (max-width: 768px) { 
+      .container {
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+      }
+
+      .info-box {
+        max-width: 90%;
+        font-size: 1.35rem;
+        width: 16%;
+      }
+
+      
+      
+      
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <p id="title">HA Portfolio</p>
+    <div class="nav-links">
+      <a href="#Hem" class="active">Hem</a>
+      <a href="Om.html">Om</a>
+      <a href="Cv.html">CV</a>
+      <a href="Portfolio.html">Portfolio</a>
+      <a href="Kontakt2.html">Kontakt</a>
+    </div>
+    
+  </div>
+
+  <div class="container">
+    <div class="profile">
+      <img src="Depositphotos_484354208_S.png" alt="Profilbild" loading="lazy"/>
+    </div>
+
+    <div class="info-box">
+      Mitt namn är Hjalmar Alldén. På denna webbplats hittar du information om mig samt material som visar på min kompetens.
+    </div>
+  </div>
+
+</body>
+</html>
